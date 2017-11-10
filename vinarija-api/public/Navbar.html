@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">           
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#/main">Wine cellar</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">  
+        <!-- dodati su showAddWine i showWineTable u $scope kontrolera koji kontrolise stranicu. Stranica se pomocu ng-include dodaje u MainController, odnosno MainController je parent
+          i njegovom $scope-u pristupamo kao $parent
+        -->     
+        <li><a href="#/main"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li><a href="#/wine/add">Add wine</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicons glyphicons-circle-info"></span>About us</a></li>       
+      </ul>
+    </div>
+
+  </div>
+</nav>

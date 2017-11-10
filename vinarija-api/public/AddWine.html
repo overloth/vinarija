@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <form class="form-horizontal" role="form" >
+  			
+  			<div id="nameFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="name">Name:</label>
+    			<div class="col-sm-10">
+      				<input type="text" class="form-control" name="name" placeholder="Enter wine name" required="" ng-model="newWine.name"></input>
+      				<span id="nameGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div id="descriptionFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="description">Description:</label>
+    			<div class="col-sm-10">
+      				<textarea class="form-control" name="description" placeholder="Enter description" rows="5" required="" ng-model="newWine.description"></textarea>
+      				<span id="descriptionGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div id="yearFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="year">Year:</label>
+    			<div class="col-sm-10">
+      				<input type="number" class="form-control" name="year" placeholder="Enter year" required="" ng-model="newWine.year"></input>
+      				<span id="yearGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div id="grapesFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="grapes">Grapes:</label>
+    			<div class="col-sm-10">
+      				<input type="text" class="form-control" name="grapes" placeholder="Enter wine name" required="" ng-model="newWine.grapes"></input>
+      				<span id="grapesGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div id="countryFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="name">Country:</label>
+    			<div class="col-sm-10">
+      				<input type="text" class="form-control" name="country" placeholder="Enter country" required="" ng-model="newWine.country"></input>
+      				<span id="countryGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div id="regionFG" class="form-group has-warning has-feedback">
+    			<label class="control-label col-sm-2" for="region">Region:</label>
+    			<div class="col-sm-10">
+      				<input type="text" class="form-control" name="region" placeholder="Enter region" required="" ng-model="newWine.region"></input>
+      				<span id="regionGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    			</div>
+  			</div>
+
+  			<div class="form-group"> 
+    			<div class="col-sm-offset-2 col-sm-10">
+      				<button  class="btn btn-default" ng-click="addWine()">Submit</button>
+    			</div>
+          <div class="col-sm-offset-2 col-sm-10">
+              <button  class="btn btn-default" ng-click="removeWine()">Remove</button>
+          </div>
+  			</div>
+		</form>
+	</div>
